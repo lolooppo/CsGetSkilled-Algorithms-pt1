@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+
+
+
 //insertion sort
 void insertion_sort(vector<int>& v){
     for(int i = 1; i < (int)v.size() ; i++){
@@ -12,6 +15,9 @@ void insertion_sort(vector<int>& v){
         v[j+1] = key;
     }
 }
+
+
+
 //selection sort
 void selection_sort(vector<int>& v){
     for(int i = 0;i<(int)v.size()-1;i++){
@@ -23,6 +29,9 @@ void selection_sort(vector<int>& v){
         swap(v[idx],v[i]);
     }
 }
+
+
+
 //count sort
 void count_sort(vector<int>& v){
     int n = v.size(),mx{0},idx{0};
@@ -38,6 +47,9 @@ void count_sort(vector<int>& v){
             v[idx] = i;
     }
 }
+
+
+
 //insertion sort without shifting
 void _insertion_sort(vector<int>& v){
     for(int i = 1;i<(int)v.size();i++){
@@ -46,6 +58,9 @@ void _insertion_sort(vector<int>& v){
             swap(v[j],v[pos]);
     }
 }
+
+
+
 //count sort for strings based on the first character
 void count_sort(vector<string>& v){
     int n = 26,idx = 0;
@@ -59,6 +74,9 @@ void count_sort(vector<string>& v){
         }
     }
 }
+
+
+
 //count sort for strings based on the first two characters
 const int letters = 26;
 int id(string& str){
@@ -78,6 +96,9 @@ void _count_sort(vector<string>& v){
         }
     }
 }
+
+
+
 
 int main(){
     vector<string>v = {"axz","axa","zzz","abc","abe"};
