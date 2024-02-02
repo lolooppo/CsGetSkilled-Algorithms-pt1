@@ -27,6 +27,8 @@ vector<int> searchRange(vector<int>& v, int target) {
     return {l,r};
 }
 
+
+
 //https://leetcode.com/problems/valid-triangle-number/description/
 int triangleNumber(vector<int>& v) {
     int res = 0 , n = v.size();
@@ -42,6 +44,9 @@ int triangleNumber(vector<int>& v) {
     }
     return res;
 }
+
+
+
 //https://leetcode.com/problems/arranging-coins/description/
 int arrangeCoins(int n) {
     int l = 0 , r = 65536 , res;
@@ -52,6 +57,9 @@ int arrangeCoins(int n) {
     }
     return res;
 }
+
+
+
 //https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/description/
 bool is(vector<int>&v ,int target ,int divisor){
     int n = v.size() , sum{0};
@@ -75,6 +83,9 @@ int smallestDivisor(vector<int>& nums, int threshold) {
     }
     return res;
 }
+
+
+
 //https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/
 bool is(vector<int>&b,int &m,int& k,int& num){
     int cnt = 0,res = 0,n = b.size();
@@ -100,6 +111,9 @@ int minDays(vector<int>& bloomDay, int m, int k) {
     }
     return res;
 }
+
+
+
 //https://leetcode.com/problems/heaters/description
 bool is(vector<int>& ho, vector<int>& he,int m){
     int j = 0;
@@ -126,6 +140,9 @@ int findRadius(vector<int>& ho, vector<int>& he) {
     }
     return res;
 }
+
+
+
 //https://leetcode.com/problems/most-profit-assigning-work/submissions/1051741534/
 int maxProfitAssignment(vector<int>& d, vector<int>& p, vector<int>& w){
     vector<pair<int,int>>vp;
@@ -146,6 +163,9 @@ int maxProfitAssignment(vector<int>& d, vector<int>& p, vector<int>& w){
     }
     return res;
 }
+
+
+
 //https://leetcode.com/problems/find-peak-element/description/
 int findPeakElement(vector<int>& nums) {
     int l = 0,r = nums.size()-1,ans = -1;
