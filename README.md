@@ -1,7 +1,7 @@
 # Algorithms problems
 Home works and excersises from [CsGetSkilled](https://www.udemy.com/course/skills-algorithms-cpp/) by Mostafa Saad.
 
-Content:
+## Content:
 1. Recursion.
 2. Complexity Analysis.
 3. Sorting (Insertion , Selection , Count).
